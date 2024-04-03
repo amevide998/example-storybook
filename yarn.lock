@@ -2648,7 +2648,7 @@
 
 "@storybook/test-runner@^0.17.0":
   version "0.17.0"
-  resolved "https://registry.npmjs.org/@storybook/test-runner/-/test-runner-0.17.0.tgz"
+  resolved "https://registry.yarnpkg.com/@storybook/test-runner/-/test-runner-0.17.0.tgz#eba094f35718cc8d1004a514e88a92d981e7dcd8"
   integrity sha512-4mt822j0VF1H/c0//OWSST9eWV0wboncJUQ+hBm5N4wmyuObvwsiMh4pmgXw8Y82wF7g1RIofjEQqAGLa7NjgQ==
   dependencies:
     "@babel/core" "^7.22.5"
@@ -3340,6 +3340,11 @@
   dependencies:
     "@vue/compiler-dom" "3.3.13"
     "@vue/shared" "3.3.13"
+
+"@vue/devtools-api@^6.5.0":
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.6.1.tgz#7c14346383751d9f6ad4bea0963245b30220ef83"
+  integrity sha512-LgPscpE3Vs0x96PzSSB4IGVSZXZBZHpfxs+ZA1d+VEPwHdOXowy/Y2CsvCAIFrf+ssVU1pD1jidj505EpUnfbA==
 
 "@vue/eslint-config-prettier@^7.1.0":
   version "7.1.0"
@@ -7519,6 +7524,14 @@ pify@^4.0.1:
   resolved "https://registry.npmjs.org/pify/-/pify-4.0.1.tgz"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
+pinia@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.1.7.tgz#4cf5420d9324ca00b7b4984d3fbf693222115bbc"
+  integrity sha512-+C2AHFtcFqjPih0zpYuvof37SFxMQ7OEG2zV9jRI12i9BOy3YQVAHwdKtyyc8pDcDyIc33WCIsZaCFWU7WWxGQ==
+  dependencies:
+    "@vue/devtools-api" "^6.5.0"
+    vue-demi ">=0.14.5"
+
 pirates@^4.0.4, pirates@^4.0.5:
   version "4.0.6"
   resolved "https://registry.npmjs.org/pirates/-/pirates-4.0.6.tgz"
@@ -9041,6 +9054,11 @@ vue-component-type-helpers@latest:
   version "2.0.7"
   resolved "https://registry.npmjs.org/vue-component-type-helpers/-/vue-component-type-helpers-2.0.7.tgz"
   integrity sha512-7e12Evdll7JcTIocojgnCgwocX4WzIYStGClBQ+QuWPinZo/vQolv2EMq4a3lg16TKfwWafLimG77bxb56UauA==
+
+vue-demi@>=0.14.5:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.14.7.tgz#8317536b3ef74c5b09f268f7782e70194567d8f2"
+  integrity sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==
 
 vue-docgen-api@^4.40.0:
   version "4.75.1"

@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 
 export default {
   component: Task,
-  title: 'Task',
+  title: 'Example/Task',
   tags: ['autodocs'],
   //👇 Our events will be mapped in Storybook UI
   argTypes: {

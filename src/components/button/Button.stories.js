@@ -6,9 +6,6 @@ export default {
   component: MyButton,
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: {
-      control: 'color',
-    },
     onClick: {},
     size: {
       control: {
@@ -57,14 +54,8 @@ export const Small = {
   },
 };
 
-export const CustomParameter = {
+export const MobileScreen = {
   parameters: {
-    backgrounds : {
-      values: [
-          { name: 'light', value: '#faa' },
-          { name: 'dark', value: '#3dd' },
-      ]
-    },
     viewport : {
       defaultViewport : "mobile1"
     }
@@ -72,16 +63,11 @@ export const CustomParameter = {
 };
 
 
-
-
-// export const Text = {
-//   render: () => ({
-//     components: { MyButton },
-//     setup() {
-//       return {
-//         onClick: action('clicked'),
-//       };
-//     },
-//     template: '<Button label="Hello" @click="onClick" />',
-//   }),
-// };
+export const DecoratorButton = {
+ decorators: [
+   (story) => ({
+     components: { story },
+     template: '<div style="margin: 3em; border= 1px solid red"><story /></div>',
+   }),
+ ],
+};

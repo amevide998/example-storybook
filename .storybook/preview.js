@@ -1,5 +1,16 @@
 import '../src/index.css';
 
+import { setup } from '@storybook/vue3';
+import { createPinia } from 'pinia';
+
+const pinia = createPinia();
+
+// Setup the Vue app
+setup((app) => {
+  console.log('register pinia');
+  app.use(pinia);
+});
+
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
   parameters: {
@@ -10,23 +21,18 @@ const preview = {
         date: /Date$/,
       },
     },
-    backgrounds : {
+    backgrounds: {
+      default: 'light',
       values: [
-          { name: 'light', value: '#fff' },
-          { name: 'dark', value: '#333' },
-      ]
-    },
-    docs: {
-       toc: {
-        contentsSelector: '.sbdocs-content',
-        headingSelector: 'h1, h2, h3',
-        ignoreSelector: '#primary',
-        title: 'Table of Contents',
-        disable: false,
-        unsafeTocbotOptions: {
-          orderedList: false,
+        {
+          name: 'light',
+          value: '#fff',
         },
-      },
+        {
+          name: 'dark',
+          value: '#333',
+        },
+      ],
     },
   },
 };
